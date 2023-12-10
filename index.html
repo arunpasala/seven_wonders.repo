@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./nature.css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+    <div class="container">
+      
+            <a class="navbar-brand" href="#">
+              <img src="data:image/jpeg;base64,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" 
+              alt="Bootstrap" width="100" height="50">
+            </a>
+       
+      <a class="navbar-brand" href="#"> Wonders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Explore_menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Great Wall of China (China)">Great Wall of China (China)</a></li>
+              <li><a class="dropdown-item" href="#Christ the Redeemer Statue (Rio de Janeiro)">Christ the Redeemer Statue (Rio de Janeiro)</a></li>
+              <li><a class="dropdown-item" href="#Machu Picchu (Peru)">Machu Picchu (Peru)</a></li>
+              <li><a class="dropdown-item" href="#Chichen Itza (Yucatan Peninsula, Mexico)">Chichen Itza (Yucatan Peninsula, Mexico)</a></li>
+              <li><a class="dropdown-item" href="#The Roman Colosseum (Rome)">The Roman Colosseum (Rome)</a></li>
+              <li><a class="dropdown-item" href="#Taj Mahal (Agra, India)">Taj Mahal (Agra, India)</a></li>
+              <li><a class="dropdown-item" href="#Petra (Jordan)">Petra (Jordan)</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/10/12/new-seven-wonders-great-wall-of-china.jpg.rend.hgtvcom.1280.960.suffix/1491581549051.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title" name="Great Wall of China (China)">The Great Wall Of Chaina</h3>
+                  <p class="card-text"></p>
+                    Built between the 5th century B.C. and the 16th century, the Great Wall of China is a stone-and-earth 
+                    fortification created to protect the borders of the Chinese Empire from invading Mongols. The Great Wall is actually a 
+                    succession of multiple walls spanning approximately 4,000 miles, making it the world's longest manmade structure.
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2017/5/12/iStock_dislentev_ChristtheRedeemer_Brazil-485159760.jpg.rend.hgtvcom.616.411.suffix/1494623571025.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="Christ the Redeemer Statue (Rio de Janeiro)"></a>Christ the Redeemer Statue (Rio de Janeiro)</h3>
+                  <p class="card-text">
+                    The Art Deco-style Christ the Redeemer statue has been towering over Brazilians from upon Corcovado mountain in an 
+                    awe-inspiring state of eternal blessing since 1931. The 130-foot reinforced concrete-and-soapstone statue was designed 
+                    by Heitor da Silva Costa and cost approximately $250,000 to build — 
+                    much of the money was raised through donations. The statue has become an easily recognized icon for Rio and Brazil..
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/12/12/hub-peru.jpg.rend.hgtvcom.616.462.suffix/1491584605723.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="Machu Picchu (Peru)"></a>Machu Picchu (Peru)</h3>
+                  <p class="card-text">
+                    Machu Picchu, an Incan city of sparkling granite precariously perched between two towering Andean peaks, is
+                     thought by scholars to have been a sacred archaeological center for the nearby Incan capital of Cusco. Built 
+                     at the peak of the Incan Empire in the mid-1400s, this mountain citadel was later abandoned by the Incas. The site remained unknown except to locals until 1911, when it was rediscovered by archaeologist Hiram Bingham. 
+                    The site can only be reached by foot, train or helicopter; most visitors visit by train from nearby Cusco.
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/01/07ET/new-7-wonders-chichen-itza.jpg.rend.hgtvcom.616.462.suffix/1491581072343.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="Chichen Itza (Yucatan Peninsula, Mexico)"></a>Chichen Itza (Yucatan Peninsula, Mexico)</h3>
+                  <p class="card-text">
+                    The genius and adaptability of Mayan culture can be seen in the splendid ruins of Chichen Itza. This powerful city,
+                     a trading center for cloth, slaves, honey and salt, flourished from approximately 800 to 1200, and acted as the political 
+                     and economic hub of the Mayan civilization. 
+                    The most familiar ruin at the site is El Caracol, a sophisticated astronomical observatory.
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/12/6/7-world-wonders-roman-colosseum.jpg.rend.hgtvcom.616.462.suffix/1491584559201.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="The Roman Colosseum (Rome)"></a>The Roman Colosseum (Rome)</h3>
+                  <p class="card-text">
+                    Rome's, if not Italy's, most enduring icon is undoubtedly its Colosseum. Built between A.D. 
+                    70 and 80 A.D., it was in use for some 500 years. The elliptical structure sat nearly 50,000 
+                    spectators, who gathered to watch the gladiatorial events as well as other public spectacles,
+                     including battle reenactments, animal hunts and executions. Earthquakes and stone-robbers have 
+                     left the Colosseum in a state of ruin, but portions of the structure remain open to tourists, and its design 
+                    still influences the construction of modern-day amphitheaters, some 2,000 years later..
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2016/04/18/0/iStock_000059935328_Large_Rosenberg_Medical_Condition_07.jpg.rend.hgtvcom.616.493.suffix/1491593703587.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="Taj Mahal (Agra, India)"></a>Taj Mahal (Agra, India)</h3>
+                  <p class="card-text">
+                    A mausoleum commissioned for the wife of Mughal Emperor Shah Jahan, the Taj Mahal was built between 1632 and 1648.
+                     Considered the most perfect specimen of Muslim art in India, the white marble structure actually represents a number
+                      of architectural styles, including Persian, Islamic, Turkish and Indian. 
+                    The Taj Mahal also encompasses formal gardens of raised pathways, sunken flower beds and a linear reflecting pool.
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="card mb-3" style="max-width:100%;">
+            <div class="row g-12">
+              <div class="col-md-4">
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2015/03/27/carved-city-over-view-petra-jordan.jpg.rend.hgtvcom.616.462.suffix/1491580833161.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><a name="Petra (Jordan)">Petra (Jordan)</a></h3>
+                  <p class="card-text">
+                    Declared a World Heritage Site in 1985, Petra was the capital of the Nabataean empire of King Aretas IV
+                    , and likely existed in its prime from 9 B.C. to A.D. 40. The members of this civilization proved to be
+                     early experts in manipulating water technology, constructing intricate tunnels and water chambers, which
+                      helped create an pseudo-oasis. A number of incredible structures carved into stone,
+                     a 4,000-seat amphitheater and the El-Deir monastery have also helped the site earn its fame.
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Learn More...!</a>
+              
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark note-dark text-secondary mb-0">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Arun&co
+            </h6>
+            <p>
+             Get in touch for more details and offers...!
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Weekly package</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Monthly package</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Quaterly package</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">yealy packages</a>
+            </p>
+          </div> 
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Media links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Instagram</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Github</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Linkedin</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Hyderabad India</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              arun96666.ar@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 91 9666683312</p>
+            <p><i class="fas fa-print me-3"></i> + 91 9515084216</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+ 
+
+
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html></p>
